@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Protest+Strike&display=swap');
+
+
+:root {
+    --background: #93619f;
+    --color-one: #eea069;
+    --light: #e7ebda;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Finger Paint', sans-serif;
+}
+section{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--background);
+}
+
+.title{
+    font-size: 50px;
+    color: var(--color-title);
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3,130px);
+    gap: 0.5rem;
+   
+}
+
+/* Tu CSS modificado */
+.cell-checkbox {
+    display: none;
+}
+
+.cell {
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    font-size: 65px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    cursor: pointer;
+}
+
+.cell:hover{
+    background-color: white;
+}
+
+/* Tu CSS modificado */
+.cell.clicked:hover {
+    background-color: var(--light);
+    transition: none;
+}
